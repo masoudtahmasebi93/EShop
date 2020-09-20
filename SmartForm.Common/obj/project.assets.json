@@ -7163,33 +7163,31 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\m.tahmasebi.ISTD\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Users\\mr.pourghorban\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\m.tahmasebi.ISTD\\source\\repos\\EShop\\SmartForm.Common\\SmartForm.Common.csproj",
+      "projectUniqueName": "C:\\Users\\mr.pourghorban\\Downloads\\EShop\\SmartForm.Common\\SmartForm.Common.csproj",
       "projectName": "SmartForm.Common",
-      "projectPath": "C:\\Users\\m.tahmasebi.ISTD\\source\\repos\\EShop\\SmartForm.Common\\SmartForm.Common.csproj",
-      "packagesPath": "C:\\Users\\m.tahmasebi.ISTD\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\m.tahmasebi.ISTD\\source\\repos\\EShop\\SmartForm.Common\\obj\\",
+      "projectPath": "C:\\Users\\mr.pourghorban\\Downloads\\EShop\\SmartForm.Common\\SmartForm.Common.csproj",
+      "packagesPath": "C:\\Users\\mr.pourghorban\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mr.pourghorban\\Downloads\\EShop\\SmartForm.Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\m.tahmasebi.ISTD\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\mr.pourghorban\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "\\\\192.168.105.55\\LocalNuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -7269,12 +7267,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.2, 3.1.2]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -7283,7 +7275,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
