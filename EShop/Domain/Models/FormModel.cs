@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Eshop.Domain.Models
 {
-    public class ProductModel 
+    public class FormModel 
     {
         public long Id { get; set; }
         public string Code { get; set; }
