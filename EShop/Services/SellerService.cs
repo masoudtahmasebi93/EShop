@@ -18,7 +18,12 @@ namespace EShop.Services
             _sellerRepository = sellerRepository;
         }
 
-        public int InsertSellerService(SellerServiceInputModel data)
+        public dynamic Get()
+        {
+            return _sellerRepository.Get();
+        }
+
+        public dynamic InsertSellerService(SellerServiceInputModel data)
         {
             return _sellerRepository.InsertSeller(data);
         }

@@ -6,7 +6,7 @@ namespace EShop.Services
 {
     public interface ISellerRepository
     {
-        public int InsertSeller(SellerServiceInputModel data);
-        public int test();
+         dynamic InsertSeller(SellerServiceInputModel data);
+         dynamic Get();
     }
 }
