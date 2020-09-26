@@ -1,5 +1,0 @@
-C:\Users\m.tahmasebi.ISTD\Downloads\NET.Core.Microservices.www.download.ir\NET.Core.Microservices.www.download.ir\Code_66\Code\SmartForm.Commons\bin\Debug\netcoreapp3.1\SmartForm.Commons.deps.json
-C:\Users\m.tahmasebi.ISTD\Downloads\NET.Core.Microservices.www.download.ir\NET.Core.Microservices.www.download.ir\Code_66\Code\SmartForm.Commons\bin\Debug\netcoreapp3.1\SmartForm.Commons.dll
-C:\Users\m.tahmasebi.ISTD\Downloads\NET.Core.Microservices.www.download.ir\NET.Core.Microservices.www.download.ir\Code_66\Code\SmartForm.Commons\obj\Debug\netcoreapp3.1\SmartForm.Commons.AssemblyInfoInputs.cache
-C:\Users\m.tahmasebi.ISTD\Downloads\NET.Core.Microservices.www.download.ir\NET.Core.Microservices.www.download.ir\Code_66\Code\SmartForm.Commons\obj\Debug\netcoreapp3.1\SmartForm.Commons.AssemblyInfo.cs
-C:\Users\m.tahmasebi.ISTD\Downloads\NET.Core.Microservices.www.download.ir\NET.Core.Microservices.www.download.ir\Code_66\Code\SmartForm.Commons\obj\Debug\netcoreapp3.1\SmartForm.Commons.csprojAssemblyReference.cache

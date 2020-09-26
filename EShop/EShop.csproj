@@ -5,6 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\ProductController.cs" />
+    <Compile Remove="Controllers\WeatherForecastController.cs" />
+    <Compile Remove="Domain\Models\ProductModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Domain\Enums\" />
   </ItemGroup>
 

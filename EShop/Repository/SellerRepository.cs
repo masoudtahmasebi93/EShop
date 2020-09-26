@@ -1,12 +1,12 @@
 ﻿using EShop.Domain.Models;
 using Microsoft.Extensions.Configuration;
-using System.Data.SqlClient;
 using System.Threading.Tasks;
 using Dapper;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Text;
+using System.Data.SqlClient;
 
 namespace EShop.Services
 {
