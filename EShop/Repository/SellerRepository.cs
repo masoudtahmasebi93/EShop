@@ -29,7 +29,7 @@ namespace EShop.Services
                     var dbParams = new DynamicParameters();
                     con.Open();
                     dbParams.Add("@Id", 2);
-                    var reader = con.ExecuteReader(
+                    var reader = con.Query<dynamic>(
                    sql: "[dbo].[GetZonesById]",
                    param: dbParams,
                    commandType: CommandType.StoredProcedure);

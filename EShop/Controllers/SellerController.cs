@@ -31,7 +31,7 @@ namespace EShop.Controllers
             return Ok(_sellerService.InsertSellerService(data));
         }
 
-        [HttpPost]
+        [HttpGet]
         public IActionResult test()
         {
             return Ok(_sellerService.test());
