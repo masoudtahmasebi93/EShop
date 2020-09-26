@@ -18,7 +18,7 @@ namespace EShop.Services
             configuration = _configuration;
         }
 
-        public int InsertSeller(SellerServiceInputModel data)
+        public dynamic InsertSeller(SellerServiceInputModel data)
         {
             using (var con = new SqlConnection(configuration.GetValue<string>("ConnectionString:SQLConnection")))
             {
@@ -34,7 +34,31 @@ namespace EShop.Services
                    param: dbParams,
                    commandType: CommandType.StoredProcedure);
 
-                    return 1;
+                    return reader;
+                }
+                catch (Exception ex)
+                {
+
+                    throw ex;
+                }
+                finally
+                {
+                    con.Close();
+                }
+            }
+        }
+        public dynamic Get()
+        {
+            using (var con = new SqlConnection(configuration.GetValue<string>("ConnectionString:SQLConnection")))
+            {
+                try
+                {
+                    con.Open();
+                    
+                    var reader = con.Query(
+                   sql: "[dbo].[Sellers]");
+
+                    return reader;
                 }
                 catch (Exception ex)
                 {

@@ -35,7 +35,7 @@ namespace EShop.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok("Hi");
+            return Ok(_sellerService.Get());
         }
 
         // http://localhost:7186/Seller/Edit/5

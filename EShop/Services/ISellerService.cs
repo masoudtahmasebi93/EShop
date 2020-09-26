@@ -8,6 +8,7 @@ namespace EShop.Services
 {
     public interface ISellerService
     {
-        int InsertSellerService(SellerServiceInputModel data);
+        dynamic InsertSellerService(SellerServiceInputModel data);
+        dynamic Get();
     }
 }
