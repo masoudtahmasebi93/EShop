@@ -24,3 +24,12 @@ D:\Projects\SmartForm\src\Shared\SmartForm.Common\obj\Debug\netcoreapp3.1\SmartF
 D:\Projects\SmartForm\src\Shared\SmartForm.Common\obj\Debug\netcoreapp3.1\SmartForm.Common.dll
 D:\Projects\SmartForm\src\Shared\SmartForm.Common\obj\Debug\netcoreapp3.1\SmartForm.Common.pdb
 D:\Projects\SmartForm\src\Shared\SmartForm.Common\obj\Debug\netcoreapp3.1\SmartForm.Common.csproj.CoreCompileInputs.cache
+D:\PROJECT\EShop\EShop\SmartForm.Common\bin\Debug\netcoreapp3.1\SmartForm.Common.deps.json
+D:\PROJECT\EShop\EShop\SmartForm.Common\bin\Debug\netcoreapp3.1\SmartForm.Common.dll
+D:\PROJECT\EShop\EShop\SmartForm.Common\bin\Debug\netcoreapp3.1\SmartForm.Common.pdb
+D:\PROJECT\EShop\EShop\SmartForm.Common\obj\Debug\netcoreapp3.1\SmartForm.Common.csprojAssemblyReference.cache
+D:\PROJECT\EShop\EShop\SmartForm.Common\obj\Debug\netcoreapp3.1\SmartForm.Common.AssemblyInfoInputs.cache
+D:\PROJECT\EShop\EShop\SmartForm.Common\obj\Debug\netcoreapp3.1\SmartForm.Common.AssemblyInfo.cs
+D:\PROJECT\EShop\EShop\SmartForm.Common\obj\Debug\netcoreapp3.1\SmartForm.Common.csproj.CoreCompileInputs.cache
+D:\PROJECT\EShop\EShop\SmartForm.Common\obj\Debug\netcoreapp3.1\SmartForm.Common.dll
+D:\PROJECT\EShop\EShop\SmartForm.Common\obj\Debug\netcoreapp3.1\SmartForm.Common.pdb

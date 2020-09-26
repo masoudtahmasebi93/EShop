@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mr.pourghorban\\Downloads\\EShop\\EShop\\EShop.csproj": {}
+    "D:\\PROJECT\\EShop\\EShop\\EShop\\EShop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mr.pourghorban\\Downloads\\EShop\\EShop\\EShop.csproj": {
+    "D:\\PROJECT\\EShop\\EShop\\EShop\\EShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mr.pourghorban\\Downloads\\EShop\\EShop\\EShop.csproj",
+        "projectUniqueName": "D:\\PROJECT\\EShop\\EShop\\EShop\\EShop.csproj",
         "projectName": "EShop",
-        "projectPath": "C:\\Users\\mr.pourghorban\\Downloads\\EShop\\EShop\\EShop.csproj",
+        "projectPath": "D:\\PROJECT\\EShop\\EShop\\EShop\\EShop.csproj",
         "packagesPath": "C:\\Users\\mr.pourghorban\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mr.pourghorban\\Downloads\\EShop\\EShop\\obj\\",
+        "outputPath": "D:\\PROJECT\\EShop\\EShop\\EShop\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -41,6 +41,20 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.35, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

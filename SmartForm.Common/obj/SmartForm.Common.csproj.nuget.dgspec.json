@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mr.pourghorban\\Downloads\\EShop\\SmartForm.Common\\SmartForm.Common.csproj": {}
+    "D:\\PROJECT\\EShop\\EShop\\SmartForm.Common\\SmartForm.Common.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mr.pourghorban\\Downloads\\EShop\\SmartForm.Common\\SmartForm.Common.csproj": {
+    "D:\\PROJECT\\EShop\\EShop\\SmartForm.Common\\SmartForm.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mr.pourghorban\\Downloads\\EShop\\SmartForm.Common\\SmartForm.Common.csproj",
+        "projectUniqueName": "D:\\PROJECT\\EShop\\EShop\\SmartForm.Common\\SmartForm.Common.csproj",
         "projectName": "SmartForm.Common",
-        "projectPath": "C:\\Users\\mr.pourghorban\\Downloads\\EShop\\SmartForm.Common\\SmartForm.Common.csproj",
+        "projectPath": "D:\\PROJECT\\EShop\\EShop\\SmartForm.Common\\SmartForm.Common.csproj",
         "packagesPath": "C:\\Users\\mr.pourghorban\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mr.pourghorban\\Downloads\\EShop\\SmartForm.Common\\obj\\",
+        "outputPath": "D:\\PROJECT\\EShop\\EShop\\SmartForm.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
