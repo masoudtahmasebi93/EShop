@@ -587,36 +587,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Masoud\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Users\\mr.pourghorban\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\EShop\\EShop\\EShop.csproj",
+      "projectUniqueName": "D:\\PROJECT\\EShop\\EShop\\EShop\\EShop.csproj",
       "projectName": "EShop",
-      "projectPath": "D:\\Projects\\EShop\\EShop\\EShop.csproj",
-      "packagesPath": "C:\\Users\\Masoud\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\EShop\\EShop\\obj\\",
+      "projectPath": "D:\\PROJECT\\EShop\\EShop\\EShop\\EShop.csproj",
+      "packagesPath": "C:\\Users\\mr.pourghorban\\.nuget\\packages\\",
+      "outputPath": "D:\\PROJECT\\EShop\\EShop\\EShop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Masoud\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\mr.pourghorban\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "D:\\Projects": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nugetized.blob.core.windows.net/live-reload/index.json": {}
+        "\\\\192.168.105.55\\LocalNuget": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
@@ -663,7 +659,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
