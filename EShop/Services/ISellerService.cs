@@ -10,5 +10,7 @@ namespace EShop.Services
     {
         dynamic InsertSellerService(SellerServiceInputModel data);
         dynamic Get();
+
+        dynamic test();
     }
 }

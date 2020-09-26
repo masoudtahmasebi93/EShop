@@ -28,7 +28,7 @@ namespace EShop.Services
             return _sellerRepository.InsertSeller(data);
         }
 
-        public int test()
+        public dynamic test()
         {
             return _sellerRepository.test();
         }

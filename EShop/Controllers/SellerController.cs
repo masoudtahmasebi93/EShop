@@ -31,6 +31,12 @@ namespace EShop.Controllers
             return Ok(_sellerService.InsertSellerService(data));
         }
 
+        [HttpPost]
+        public IActionResult test()
+        {
+            return Ok(_sellerService.test());
+        }
+
         //http://localhost:7186/Seller/get
         [HttpGet]
         public IActionResult Get()
