@@ -10,7 +10,7 @@ using Microsoft.Extensions.Logging;
 namespace EShop.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]/[action]")]
     public class SellerController : ControllerBase
     {
 
@@ -30,5 +30,33 @@ namespace EShop.Controllers
         {
             return Ok(_sellerService.InsertSellerService(data));
         }
+
+        //http://localhost:7186/Seller/get
+        [HttpGet]
+        public IActionResult Get()
+        {
+            return Ok("Hi");
+        }
+
+        // http://localhost:7186/Seller/Edit/5
+        [HttpGet("{id}")]
+        public IActionResult Edit(long id)
+        {
+            return Ok("" + id);
+        }
+
+        //http://localhost:7186/Seller/mamad
+        [HttpGet]
+        public IActionResult Mamad()
+        {
+            return Ok("Salam Mamad");
+        }
+        //http://localhost:7186/Seller/joonom/joonom
+        [HttpGet("joonom")]
+        public IActionResult Joonom()
+        {
+            return Ok("Salam joonom");
+        }
+
     }
 }
