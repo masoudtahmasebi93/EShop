@@ -8,5 +8,6 @@ namespace EShop.Services
     {
          dynamic InsertSeller(SellerServiceInputModel data);
          dynamic Get();
+        int test();
     }
 }

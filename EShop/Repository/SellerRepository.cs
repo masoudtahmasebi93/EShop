@@ -18,6 +18,11 @@ namespace EShop.Services
             configuration = _configuration;
         }
 
+        public int test()
+        {
+            return 1;
+        }
+
         public dynamic InsertSeller(SellerServiceInputModel data)
         {
             using (var con = new SqlConnection(configuration.GetValue<string>("ConnectionString:SQLConnection")))
