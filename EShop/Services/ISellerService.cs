@@ -9,5 +9,7 @@ namespace EShop.Services
     public interface ISellerService
     {
         int InsertSellerService(SellerServiceInputModel data);
+
+        int test();
     }
 }

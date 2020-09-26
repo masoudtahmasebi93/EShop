@@ -22,5 +22,10 @@ namespace EShop.Services
         {
             return _sellerRepository.InsertSeller(data);
         }
+
+        public int test()
+        {
+            return _sellerRepository.test();
+        }
     }
 }

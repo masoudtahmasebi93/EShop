@@ -7,5 +7,6 @@ namespace EShop.Services
     public interface ISellerRepository
     {
         public int InsertSeller(SellerServiceInputModel data);
+        public int test();
     }
 }

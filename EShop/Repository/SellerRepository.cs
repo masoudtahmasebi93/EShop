@@ -18,6 +18,37 @@ namespace EShop.Services
             configuration = _configuration;
         }
 
+        public int test()
+        {
+            using (var con = new SqlConnection(configuration.GetValue<string>("ConnectionString:SQLConnection")))
+            {
+                try
+                {
+                   // var res = Newtonsoft.Json.JsonConvert.SerializeObject(data);
+
+                    var dbParams = new DynamicParameters();
+                    con.Open();
+                    dbParams.Add("@Id", 2);
+                    var reader = con.ExecuteReader(
+                   sql: "[dbo].[GetZonesById]",
+                   param: dbParams,
+                   commandType: CommandType.StoredProcedure);
+
+                    return 1;
+                }
+                catch (Exception ex)
+                {
+
+                    throw ex;
+                }
+                finally
+                {
+                    con.Close();
+                }
+            }
+
+        }
+
         public int InsertSeller(SellerServiceInputModel data)
         {
             using (var con = new SqlConnection(configuration.GetValue<string>("ConnectionString:SQLConnection")))
