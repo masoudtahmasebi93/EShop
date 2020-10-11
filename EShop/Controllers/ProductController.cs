@@ -2,38 +2,74 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using EShop.Domain.Models;
+using EShop.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace EShop.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]/[action]")]
     public class ProductController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
-
         private readonly ILogger<ProductController> _logger;
 
-        public ProductController(ILogger<ProductController> logger)
+        private readonly IProductService _productService;
+
+        public ProductController(ILogger<ProductController> logger,
+            IProductService productService)
         {
             _logger = logger;
+            _productService = productService;
         }
 
-        [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        [HttpPost]
+        public IActionResult GetProductCategories(GetProductsCategoriesInputModel data)
         {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
+            return Ok(_productService.GetProductCategoriesService(data));
+        }
+
+        [HttpPost]
+        public IActionResult GetProductTypeFields(GetProductTypeFieldsInputModel data)
+        {
+            return Ok(_productService.GetProductTypeFieldsService(data));
+        }
+
+        [HttpPost]
+        public IActionResult DeleteProductCategories(ProductCategoriesDeleteInputModel data)
+        {
+            return Ok(_productService.DeleteProductCategoriesService(data));
+        }
+
+        [HttpPost]
+        public IActionResult InsertProductCategories(ProductCategoriesInsertInputModel data)
+        {
+            return Ok(_productService.InsertProductCategoriesService(data));
+        }
+
+        [HttpPost]
+        public IActionResult UpdateProductCategories(ProductCategoriesUpdateInputModel data)
+        {
+            return Ok(_productService.UpdateProductCategoriesService(data));
+        }
+
+        [HttpPost]
+        public IActionResult DeleteProductType(ProductTypeDeleteInputModel data)
+        {
+            return Ok(_productService.DeleteProductTypeService(data));
+        }
+
+        [HttpPost]
+        public IActionResult InsertProductType(ProductTypeInsertInputModel data)
+        {
+            return Ok(_productService.InsertProductTypeService(data));
+        }
+
+        [HttpPost]
+        public IActionResult UpdateProductType(ProductTypeUpdateInputModel data)
+        {
+            return Ok(_productService.UpdateProductTypeService(data));
         }
     }
 }
