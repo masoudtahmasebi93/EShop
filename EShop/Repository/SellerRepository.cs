@@ -18,19 +18,18 @@ namespace EShop.Services
             configuration = _configuration;
         }
 
-        public dynamic test()
+        public dynamic InsertSeller(SellerInsertServiceInputModel data)
         {
             using (var con = new SqlConnection(configuration.GetValue<string>("ConnectionString:SQLConnection")))
             {
                 try
                 {
-               
-
+                    var res = Newtonsoft.Json.JsonConvert.SerializeObject(data);
                     var dbParams = new DynamicParameters();
                     con.Open();
-                    dbParams.Add("@Id", 2);
+                    dbParams.Add("@item", Newtonsoft.Json.JsonConvert.SerializeObject(data));
                     var reader = con.Query<dynamic>(
-                   sql: "[dbo].[GetZonesById]",
+                   sql: "[dbo].[SellerInsertProcedure]",
                    param: dbParams,
                    commandType: CommandType.StoredProcedure);
 
@@ -48,7 +47,8 @@ namespace EShop.Services
             }
         }
 
-        public dynamic InsertSeller(SellerServiceInputModel data)
+
+        public dynamic UpdateSeller(SellerUpdateServiceInputModel data)
         {
             using (var con = new SqlConnection(configuration.GetValue<string>("ConnectionString:SQLConnection")))
             {
@@ -59,8 +59,68 @@ namespace EShop.Services
                     var dbParams = new DynamicParameters();
                     con.Open();
                     dbParams.Add("@item", Newtonsoft.Json.JsonConvert.SerializeObject(data));
+                    var reader = con.Query<dynamic>(
+                   sql: "[dbo].[SellerUpdateProcedure]",
+                   param: dbParams,
+                   commandType: CommandType.StoredProcedure);
+
+                    return reader;
+                }
+                catch (Exception ex)
+                {
+
+                    throw ex;
+                }
+                finally
+                {
+                    con.Close();
+                }
+            }
+        }
+
+        public int DeleteSeller(SellerDeleteServiceInputModel data)
+        {
+            using (var con = new SqlConnection(configuration.GetValue<string>("ConnectionString:SQLConnection")))
+            {
+                try
+                {
+                   
+
+                    var dbParams = new DynamicParameters();
+                    con.Open();
+                    dbParams.Add("@Id", data.Id);
                     var reader = con.ExecuteReader(
-                   sql: "[dbo].[SellerInsertProcedure]",
+                   sql: "[dbo].[SellerDeleteProcedure]",
+                   param: dbParams,
+                   commandType: CommandType.StoredProcedure);
+
+                    return 1;
+                }
+                catch (Exception ex)
+                {
+
+                    throw ex;
+                }
+                finally
+                {
+                    con.Close();
+                }
+            }
+        }
+
+        public dynamic test(SellerDeleteServiceInputModel data)
+        {
+            using (var con = new SqlConnection(configuration.GetValue<string>("ConnectionString:SQLConnection")))
+            {
+                try
+                { 
+
+
+                    var dbParams = new DynamicParameters();
+                    con.Open();
+                    dbParams.Add("@Id", data.Id);
+                    var reader = con.Query<dynamic>(
+                   sql: "[dbo].[GetProductTypeFieldsById]",
                    param: dbParams,
                    commandType: CommandType.StoredProcedure);
 
@@ -85,7 +145,7 @@ namespace EShop.Services
                 {
                     con.Open();
                     
-                    var reader = con.Query(
+                    var reader = con.ExecuteReader(
                    sql: "[dbo].[Sellers]");
 
                     return reader;

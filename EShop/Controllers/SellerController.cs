@@ -25,16 +25,28 @@ namespace EShop.Controllers
             _sellerService = sellerService;
         }
 
-        [HttpGet]
-        public IActionResult Insert(SellerServiceInputModel data)
+        [HttpPost]
+        public IActionResult Insert(SellerInsertServiceInputModel data)
         {
             return Ok(_sellerService.InsertSellerService(data));
         }
 
-        [HttpGet]
-        public IActionResult test()
+        [HttpPost]
+        public IActionResult Update(SellerUpdateServiceInputModel data)
         {
-            return Ok(_sellerService.test());
+            return Ok(_sellerService.UpdateSellerService(data));
+        }
+
+        [HttpPost]
+        public IActionResult Delete(SellerDeleteServiceInputModel data)
+        {
+            return Ok(_sellerService.DeleteSellerService(data));
+        }
+
+        [HttpGet]
+        public IActionResult test(SellerDeleteServiceInputModel data)
+        {
+            return Ok(_sellerService.test(data));
         }
 
         //http://localhost:7186/Seller/get
@@ -42,26 +54,6 @@ namespace EShop.Controllers
         public IActionResult Get()
         {
             return Ok(_sellerService.Get());
-        }
-
-        // http://localhost:7186/Seller/Edit/5
-        [HttpGet("{id}")]
-        public IActionResult Edit(long id)
-        {
-            return Ok("" + id);
-        }
-
-        //http://localhost:7186/Seller/mamad
-        [HttpGet]
-        public IActionResult Mamad()
-        {
-            return Ok("Salam Mamad");
-        }
-        //http://localhost:7186/Seller/joonom/joonom
-        [HttpGet("joonom")]
-        public IActionResult Joonom()
-        {
-            return Ok("Salam joonom");
         }
 
     }

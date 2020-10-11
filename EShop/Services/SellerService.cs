@@ -17,20 +17,27 @@ namespace EShop.Services
             _configuration = configuration;
             _sellerRepository = sellerRepository;
         }
+        public dynamic InsertSellerService(SellerInsertServiceInputModel data)
+        {
+            return _sellerRepository.InsertSeller(data);
+        }
+        public dynamic UpdateSellerService(SellerUpdateServiceInputModel data)
+        {
+            return _sellerRepository.UpdateSeller(data);
+        }
+        public int DeleteSellerService(SellerDeleteServiceInputModel data)
+        {
+            return _sellerRepository.DeleteSeller(data);
+        }
 
         public dynamic Get()
         {
             return _sellerRepository.Get();
         }
 
-        public dynamic InsertSellerService(SellerServiceInputModel data)
+        public dynamic test(SellerDeleteServiceInputModel data)
         {
-            return _sellerRepository.InsertSeller(data);
-        }
-
-        public dynamic test()
-        {
-            return _sellerRepository.test();
+            return _sellerRepository.test( data);
         }
     }
 }
